@@ -29,10 +29,10 @@ public Result seckillVoucher(Long voucherId) {
     // 3. MQ async order creation
 }
 
-### 2. User System
-JWT token authentication
-Redis-based session management
-Distributed session consistency solution
+### 3. User System
+- JWT token authentication
+- Redis-based session management
+- Distributed session consistency solution
 
 ## 🚀 Quick Start
 
@@ -45,11 +45,11 @@ Redis 6.0+
 ### Deployment
 Import SQL:
 
-sql
+```sql
 mysql -u root -p < db_hmdp.sql
 ### Configure application:
 
-yaml
+```yaml
 # application-dev.yml
 redis:
   host: 127.0.0.1
@@ -59,7 +59,7 @@ redis:
   #   nodes: 192.168.1.100:6379,192.168.1.101:6379
 ### Run the application:
 
-bash
+```bash
 mvn spring-boot:run
 
 
