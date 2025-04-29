@@ -28,7 +28,7 @@ public Result seckillVoucher(Long voucherId) {
     // 2. Distributed lock to prevent overselling
     // 3. MQ async order creation
 }
-```java
+```
 
 ### 3. User System  
 - JWT token authentication
@@ -42,12 +42,14 @@ public Result seckillVoucher(Long voucherId) {
 JDK 1.8+
 MySQL 5.7+
 Redis 6.0+
+```
 
 ### Deployment
 Import SQL:
 
 ```sql
 mysql -u root -p < db_hmdp.sql
+```
 ### Configure application:
 
 ```yaml
@@ -58,10 +60,12 @@ redis:
   # For production:
   # cluster:
   #   nodes: 192.168.1.100:6379,192.168.1.101:6379
+```
 ### Run the application:
 
 ```bash
 mvn spring-boot:run
+```
 
 
 
