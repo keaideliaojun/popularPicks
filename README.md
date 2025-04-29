@@ -63,9 +63,5 @@ redis:
 ```
 ### Run the application:
 
-```bash
-mvn spring-boot:run
-```
-
 
 
