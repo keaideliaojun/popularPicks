@@ -28,3 +28,62 @@ public Result seckillVoucher(Long voucherId) {
     // 2. Distributed lock to prevent overselling
     // 3. MQ async order creation
 }
+
+### 2. User System
+JWT token authentication
+Redis-based session management
+Distributed session consistency solution
+
+## 🚀 Quick Start
+
+### Prerequisites
+```bash
+JDK 1.8+
+MySQL 5.7+
+Redis 6.0+
+
+### Deployment
+Import SQL:
+
+sql
+mysql -u root -p < db_hmdp.sql
+### Configure application:
+
+yaml
+# application-dev.yml
+redis:
+  host: 127.0.0.1
+  password: yourpassword
+  # For production:
+  # cluster:
+  #   nodes: 192.168.1.100:6379,192.168.1.101:6379
+### Run the application:
+
+bash
+mvn spring-boot:run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
