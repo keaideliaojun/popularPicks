@@ -27,7 +27,7 @@ public Result seckillVoucher(Long voucherId) {
     // 1. Redis atomic inventory check
     // 2. Distributed lock to prevent overselling
     // 3. MQ async order creation
-}
+}```
 
 ### 3. User System
 - JWT token authentication
@@ -61,29 +61,6 @@ redis:
 
 ```bash
 mvn spring-boot:run
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
